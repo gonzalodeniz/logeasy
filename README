@@ -1,0 +1,22 @@
+logeasy.py
+Autor: Gonzalo Déniz
+Fecha: 21/02/2017
+Version: 1.0
+
+Facilita el uso de los logs en el código de python.
+Una función es para mostrar los logs por consola y otro por fichero.
+
+
+Ej. de uso:
+clog = logeasy.console_log(name='log_monadlib',
+                            level=logging.DEBUG,
+                            format=logeasy.F_DEBUG)
+
+flog = logeasy.file_log(filename='log_monadlib',
+                        name='log_monsadlib',
+                        filemode='w',
+                        level=logging.DEBUG,
+                        format=logeasy.F_DEBUG)
+
+clog.info("mensaje")
+flog.info("mensaje")
